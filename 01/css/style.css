@@ -1,0 +1,386 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: poppines;
+}
+
+header img {
+  height: 70vh;
+  width: 100%;
+}
+
+#img1 {
+  background-image: linear-gradient(to bottom, transparent 55%, black),
+    url(https://dmexco-lightsails-media.s3.eu-central-1.amazonaws.com/wp-content/uploads/2020/11/12120809/IoT-datenschutz-scaled.jpeg);
+  background-repeat: no-repeat;
+  height: 70vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#img2 {
+  background-image: linear-gradient(to bottom, transparent 55%, black),
+    url(https://www.thefastmode.com/media/k2/items/src/575bb286c7cd7270832a01e317813449.jpg?t=20220608_040449);
+  background-repeat: no-repeat;
+  height: 70vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#img3 {
+  background-image: linear-gradient(to bottom, transparent 55%, black),
+    url(https://images.lawpath.com.au/2019/11/stencil.new-blog-image-2019-11-06T172327.907.jpg);
+  background-repeat: no-repeat;
+  height: 70vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  margin-top: -300px;
+}
+
+/* Tutorial on https://fossheim.io/writing/posts/css-text-gradient. */
+
+.gradient-text {
+  /* Fallback: Set a background color. */
+  background-color: #ca4246;
+
+  /* Create the gradient. */
+  background-image: linear-gradient(
+    45deg,
+    #ca4246 16.666%,
+    #e16541 16.666%,
+    #e16541 33.333%,
+    #f18f43 33.333%,
+    #f18f43 50%,
+    #8b9862 50%,
+    #8b9862 66.666%,
+    #476098 66.666%,
+    #476098 83.333%,
+    #a7489b 83.333%
+  );
+
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* Animate the text when loading the element. */
+  /* This animates it on page load and when hovering out. */
+  animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+}
+
+.gradient-text:hover {
+  animation: rainbow-text-simple-animation 0.5s ease-in forwards;
+}
+
+/* Move the background and make it smaller. */
+/* Animation shown when entering the page and after the hover animation. */
+@keyframes rainbow-text-simple-animation-rev {
+  0% {
+    background-size: 650%;
+  }
+  40% {
+    background-size: 650%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}
+
+/* Move the background and make it larger. */
+/* Animation shown when hovering over the text. */
+@keyframes rainbow-text-simple-animation {
+  0% {
+    background-size: 100%;
+  }
+  80% {
+    background-size: 650%;
+  }
+  100% {
+    background-size: 650%;
+  }
+}
+
+/* Style the rest of the page. */
+body {
+  background-color: #fdf1f0;
+}
+
+/*  */
+
+h1 {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: normal;
+  font-size: 4em;
+  text-align: center;
+  margin-bottom: 0;
+  margin-bottom: -0.25em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+/* header button */
+h1 {
+  margin-bottom: 10px;
+}
+.btn {
+  background-color: orange;
+  font-size: 25px;
+  color: #fff;
+}
+
+/* end btn */
+
+/* nav left border */
+
+.nav-card {
+  width: 300px;
+  height: 150px;
+  border: 1px solid #fff;
+  background-color: #fff;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  transform: skewX(20deg);
+  margin-top: -90px;
+  margin-left: -50px;
+}
+
+.nav-logo-part {
+  padding-top: 20px;
+}
+
+.nav-card h3 {
+  text-decoration: none;
+  color: #a2a3a3;
+  font-weight: bold;
+}
+
+.nav-card p {
+  font-size: 8px;
+}
+
+/* nav real */
+.navbar {
+  margin-top: -60px;
+}
+.navbar-brand {
+  padding-left: 250px;
+}
+
+.nav-btn {
+  background-color: orange;
+  font-size: 16px;
+  color: #fff;
+}
+
+/* main section */
+
+.section1 .main-sec-hed {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.main-sec-para {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.main-sec-hed-border {
+  border: 1px solid;
+  width: 20px;
+}
+
+.section1 {
+  padding-bottom: 30px;
+}
+
+/* section 02 card  */
+
+.card-body img {
+  width: 400px;
+  height: 300px;
+}
+
+.card-body {
+  background-color: orangered;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: -20px;
+  position: relative;
+  border-radius: 10px;
+  color:#fff;
+}
+
+/* section 2 card img */
+
+.card-imag span {
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  color: darkblue;
+  justify-content: center center;
+  align-items: center;
+}
+
+.sec2-card-img-para {
+  margin-top: 15px;
+}
+
+/* hover setup */
+
+.card-imag span:hover {
+  /* background-color: #476198c4; */
+  cursor: pointer;
+  background: rgba(255, 157, 0, 0.568);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 156, 0, 1) 9%,
+    rgba(255, 205, 0, 0.9808123078332895) 49%,
+    rgba(245, 255, 0, 0.9836134282814688) 94%
+  );
+}
+ /* full card section 02 */
+
+ .card-body:hover{
+    cursor: pointer;
+  background: rgba(255, 157, 0, 0.568);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 156, 0, 1) 9%,
+    rgba(255, 205, 0, 0.9808123078332895) 49%,
+    rgba(245, 255, 0, 0.9836134282814688) 94%
+  );
+   border-radius: 10px;
+   color:rgba(66, 65, 65, 0.89);
+   font-family: sans-serif;
+ }
+
+
+ /* section 03 */
+
+.sectin3-bg{
+    /* background-image: linear-gradient(transparent 55%, rgba(0, 0, 0, 0.61)),
+    url(../image/s3-bg.jpg); */
+ 
+    background-image: linear-gradient( transparent 0%, rgba(0, 0, 0, 0.582) 10%, rgba(0, 0, 0, 0.651) 10%, transparent 100%),url(../image/s3-bg.jpg);
+
+    /* background-image: url(../image/005.jpg); */
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 70vh;
+  background-size: cover;
+  background-position: center center;
+  padding-top: 50px;
+  color:#fff;
+
+}
+
+.sec3-right-border1{
+  border-bottom:  1px solid gray;
+  border-right: 1px solid gray;
+ 
+}
+
+.sec3-right-border2{
+  border-bottom:  1px solid gray;
+  border-left: 1px solid gray;
+}
+
+.sec3-border-top-1{
+  border-top:  1px solid gray;
+  border-right: 1px solid gray;
+}
+
+.sec3-border-top-2{
+  border-top:  1px solid gray;
+  border-left: 1px solid gray;
+  padding-bottom: 10px;
+}
+
+.sec3-head{
+  color: orangered;
+  font-weight: bold;
+}
+
+.sec3-para{
+  font-size: 14px;
+}
+
+.sec3-all-col{
+  padding-top:5px ;
+  padding-bottom:15px ;
+}
+
+/* section 04 */
+
+/* .section4-card{
+  margin: 0;
+} */
+
+.section4-card-1{
+  background-color: #fff;
+}
+
+.section4-card-2{
+  background-color:orangered;
+}
+
+.section4-card-3{
+  background-color:rgb(46, 45, 45);
+}
+
+.section4{
+  margin-top: -40px;
+}
+
+.section-4-img{
+  padding: 10px 2px 2px 2px;
+  width: 90px;
+  height: 100px;
+}
+
+/* section 05 */
+.section5 h1, p{
+  text-align:center;
+}
+
+/* footer */
+
+.footer{
+  background-color:gray;
+  text-decoration: none;
+}
+
+li a{
+   color: black;
+}
+
+#sec6-card img{
+  width: 400px;
+  height: 250px;
+}
